@@ -1,10 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# =========================================================
-# WANA DECRYPT0R 2.0 - SAFE TKINTER MOCKUP
-# =========================================================
-
 root = tk.Tk()
 root.title("Wana Decrypt0r 2.0")
 window_width = 690
@@ -37,10 +33,8 @@ def desktop_icons(show):
 
     if icons:
         user32.ShowWindow(icons, 5 if show else 0)
-# Sakrij ikonice
 desktop_icons(False)
 
-# Zarez = izlaz + vraćanje ikonica
 def close(event=None):
     desktop_icons(True)
     root.destroy()
@@ -61,7 +55,6 @@ def promeni_pozadinu(slika):
         20, 0, slika, 3
     )
 promeni_pozadinu(r"C:\Users\{korisnik}\Downloads\WannaCry 2.0v\root\images.png ")
-# Siguran izlaz preko ESC, bez prikaza na ekranu
 root.overrideredirect(True)
 root.protocol("WM_DELETE_WINDOW", lambda: None)
 root.bind("<quoteright>", lambda event: root.destroy())
@@ -191,7 +184,7 @@ canvas.create_rectangle(
     fill="#b51b1b",
     outline=""
 )
-# lock shackle - manji vrh
+# lock shackle
 canvas.create_arc(
     32, 10, 59, 43,
     start=0,
@@ -201,7 +194,6 @@ canvas.create_arc(
     outline="white"
 )
 
-# leve i desne stranice
 canvas.create_line(
     32, 26,
     32, 40,
